@@ -1,0 +1,89 @@
+<h2>Which GUI style should we go for?</h2>
+<p class="subtitle">All three keep the two-panel layout (input left, report right) but with different visual personalities.</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#0d1117;border-radius:10px;padding:16px;font-family:'Segoe UI',sans-serif;min-height:220px">
+        <div style="background:linear-gradient(135deg,#1f6feb,#58a6ff);color:white;border-radius:8px;padding:10px 16px;margin-bottom:12px;font-size:13px;font-weight:700;letter-spacing:1px">⚠ SCAM ALERT</div>
+        <div style="display:flex;gap:10px;height:150px">
+          <div style="flex:1;background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px">
+            <div style="color:#8b949e;font-size:10px;margin-bottom:6px">PASTE EMAIL</div>
+            <div style="background:#0d1117;border:1px solid #21262d;border-radius:5px;height:90px;padding:6px">
+              <div style="color:#c9d1d9;font-size:9px;opacity:0.5">From: security@paypa1.com...</div>
+            </div>
+            <div style="margin-top:8px;background:#1f6feb;color:white;border-radius:5px;padding:5px;text-align:center;font-size:10px;font-weight:700">▶ SCAN EMAIL</div>
+          </div>
+          <div style="flex:1;background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px">
+            <div style="color:#8b949e;font-size:10px;margin-bottom:6px">THREAT REPORT</div>
+            <div style="background:#3d0000;border:1px solid #f85149;border-radius:5px;color:#f85149;font-size:10px;padding:5px;text-align:center;font-weight:700">🔴 CRITICAL THREAT</div>
+            <div style="color:#8b949e;font-size:9px;margin-top:6px;line-height:1.4">Confidence: 94%<br/>Suspicious domain detected...<br/>URL shortener found...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Dark Security Terminal</h3>
+      <p>GitHub-dark palette. Monospace accents. Feels like a real security tool — serious and technical.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#f8fafc;border-radius:10px;padding:16px;font-family:'Segoe UI',sans-serif;min-height:220px">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:28px;height:28px;background:#ef4444;border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-size:14px">🛡</div>
+          <span style="font-size:14px;font-weight:700;color:#1e293b">Scam Alert</span>
+        </div>
+        <div style="display:flex;gap:10px;height:150px">
+          <div style="flex:1;background:white;border:1px solid #e2e8f0;border-radius:10px;padding:10px;box-shadow:0 1px 3px rgba(0,0,0,0.1)">
+            <div style="color:#64748b;font-size:10px;font-weight:600;margin-bottom:6px">Email Content</div>
+            <div style="background:#f1f5f9;border-radius:6px;height:80px;padding:6px">
+              <div style="color:#94a3b8;font-size:9px">Paste your email here...</div>
+            </div>
+            <div style="margin-top:8px;background:#3b82f6;color:white;border-radius:6px;padding:5px;text-align:center;font-size:10px;font-weight:600">Analyze Email</div>
+          </div>
+          <div style="flex:1;background:white;border:1px solid #e2e8f0;border-radius:10px;padding:10px;box-shadow:0 1px 3px rgba(0,0,0,0.1)">
+            <div style="color:#64748b;font-size:10px;font-weight:600;margin-bottom:6px">Analysis Results</div>
+            <div style="background:#fef2f2;border:1px solid #fca5a5;border-radius:6px;color:#dc2626;font-size:10px;padding:5px;text-align:center;font-weight:600">🔴 High Risk</div>
+            <div style="color:#64748b;font-size:9px;margin-top:6px;line-height:1.4">Confidence: 94%<br/>3 red flags found<br/>Recommendation: Delete</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Clean & Professional</h3>
+      <p>Light mode default, soft shadows, blue accents. Looks like a polished SaaS dashboard. Friendly but credible.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#1a1625;border-radius:10px;padding:16px;font-family:'Segoe UI',sans-serif;min-height:220px">
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:12px">
+          <div style="background:linear-gradient(135deg,#a855f7,#ec4899);-webkit-background-clip:text;color:transparent;font-size:15px;font-weight:800;background-clip:text">⚡ SCAM ALERT</div>
+        </div>
+        <div style="display:flex;gap:10px;height:150px">
+          <div style="flex:1;background:#231d33;border:1px solid #3b3057;border-radius:10px;padding:10px">
+            <div style="color:#a78bfa;font-size:10px;font-weight:600;margin-bottom:6px">Email Input</div>
+            <div style="background:#1a1625;border:1px solid #4c1d95;border-radius:6px;height:80px;padding:6px">
+              <div style="color:#7c3aed;font-size:9px;opacity:0.6">From: security@paypa1.com...</div>
+            </div>
+            <div style="margin-top:8px;background:linear-gradient(135deg,#7c3aed,#ec4899);color:white;border-radius:6px;padding:5px;text-align:center;font-size:10px;font-weight:700">⚡ SCAN</div>
+          </div>
+          <div style="flex:1;background:#231d33;border:1px solid #3b3057;border-radius:10px;padding:10px">
+            <div style="color:#a78bfa;font-size:10px;font-weight:600;margin-bottom:6px">Threat Analysis</div>
+            <div style="background:linear-gradient(135deg,#7f1d1d,#4c0519);border:1px solid #f43f5e;border-radius:6px;color:#fb7185;font-size:10px;padding:5px;text-align:center;font-weight:700">⚠ CRITICAL</div>
+            <div style="color:#a78bfa;font-size:9px;margin-top:6px;line-height:1.4">Score: 94/100<br/>Domain spoofing<br/>Urgent language</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Cyberpunk / Neon</h3>
+      <p>Purple-dark theme, gradient accents, neon highlights. High-energy, stands out. More "hacker tool" vibes.</p>
+    </div>
+  </div>
+
+</div>

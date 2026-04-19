@@ -1,0 +1,10 @@
+.env
+user_settings.json
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+dist/
+build/
+*.spec
