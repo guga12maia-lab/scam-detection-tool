@@ -138,8 +138,6 @@ phishing-detector/
 | Async | asyncio |
 | Validation | email-validator |
 
-## API Costs
-
 ## Troubleshooting
 
 **Error: "OPENAI_API_KEY not set"**
